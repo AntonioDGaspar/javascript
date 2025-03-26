@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Eventos DOM </title>
+    <style>
+        body{
+            font: normal 25px Arial;
+        }
+
+        div#Resultado{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1> Somando Valores </h1>
+    <input type="number" name="n1" id="n1"> + 
+    <input type="number" name="n2" id="n2">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="Resultado"> Resultado </div>
+
+    <script>
+        function somar(){
+            let n1 = parseInt(document.getElementById("n1").value) // Isso se não precisar do valor em String para os dois números, se precisar temos que criar outra variável que armazene os números depois de convertidos
+            let n2 = parseInt(document.querySelector("input#n2").value)
+            let res = document.getElementById("Resultado")
+            let soma = n1+n2
+            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${soma}</strong>.`
+        }
+    </script>
+</body>
+</html>
