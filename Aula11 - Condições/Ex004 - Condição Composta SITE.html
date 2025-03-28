@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Condições </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1> Confirmar Nacionalidade </h1>
+    Nacionalidade: <input type="text" name="txtvel" id="txtvel">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res"> </div>
+
+    <script>
+        function verificar(){
+            let nacionalidade = document.getElementById("txtvel").value
+            let res = document.querySelector("div#res")
+
+            if (nacionalidade.toLowerCase() == "angolana") { 
+                res.innerHTML = "<p>Você é um <strong>Angolano</strong>.</p>"
+            } 
+            else{
+                res.innerHTML = "<p>Você é um <strong>Estrangeiro</strong>.</p>"
+            }
+        }
+    </script>
+</body>
+</html>
