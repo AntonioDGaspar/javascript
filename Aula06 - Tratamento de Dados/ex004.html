@@ -6,22 +6,16 @@
     <title> Tratamento de Dados </title>
     <style>
         body{
-            background-color: rgb(202, 115, 115);
-            color: white;
             font: normal 20px Arial;
-        }
-
-        h1{
-            color: rgb(255, 255, 72);
         }
     </style>
 </head>
 <body>
-    <h1> O seu nome foi recebido </h1>
-    <p> Recebendo Valores </p>
     <script>
-        let nome = window.prompt("Digite o seu nome: ")
-        window.alert("É um Prazer, "+nome)
+        let nome = prompt("Digite o seu Nome: ")
+        document.write(`Olá, <strong>${nome}</strong>, o seu nome tem ${nome.length} letras. <br>`)
+        document.write(`O seu nome em maiúsculas será: ${nome.toUpperCase()}.<br>`)
+        document.write(`O seu nome em minúsculas será: ${nome.toLowerCase()}.<br>`)
     </script>
 </body>
 </html>
