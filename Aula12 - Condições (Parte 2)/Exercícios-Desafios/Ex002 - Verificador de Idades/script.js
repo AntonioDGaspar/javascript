@@ -29,7 +29,7 @@ function verificar() {
                 document.body.style.backgroundColor = "#6784f1"
             }
 
-            else if (idade >= 19 && idade <= 25) {
+            else if (idade >= 19 && idade <= 50) {
                 img.setAttribute("src", "adulto-homem.png")
                 document.body.style.backgroundColor = "#6784f1"
             }
@@ -53,7 +53,7 @@ function verificar() {
                 document.body.style.backgroundColor = "#d65757"
             }
 
-            else if (idade >= 19 && idade <= 25) {
+            else if (idade >= 19 && idade <= 50) {
                 img.setAttribute("src", "adulto-mulher.png")
                 document.body.style.backgroundColor = "#d65757"
             }
