@@ -17,7 +17,7 @@ function carregar() {
         imagem.src = "manhã.png"
         conteudo.style.backgroundColor = "white"
         document.body.style.backgroundColor = "#989574"
-
+        
     }
 
     else if (hora >= 12 && hora < 18) {
