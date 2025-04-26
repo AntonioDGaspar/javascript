@@ -63,10 +63,8 @@ function verificar() {
                 document.body.style.backgroundColor = "#d65757"
             }   
         }
-
         res.innerText = `${genero} com ${idade} anos.`
         res.innerHTML += "<br>"
         res.appendChild(img)
-    }
-        
+    }   
 }
